@@ -16,5 +16,23 @@ class BuyActivity : AppCompatActivity() {
             intent.putExtra("year","1")
             startActivity(intent)
         }
+
+        second_year.setOnClickListener {
+            val intent = Intent(this, ViewActivity::class.java)
+            intent.putExtra("year","2")
+            startActivity(intent)
+        }
+
+        third_year.setOnClickListener {
+            val intent = Intent(this, ViewActivity::class.java)
+            intent.putExtra("year","3")
+            startActivity(intent)
+        }
+
+        fourth_year.setOnClickListener {
+            val intent = Intent(this, ViewActivity::class.java)
+            intent.putExtra("year","4")
+            startActivity(intent)
+        }
     }
 }

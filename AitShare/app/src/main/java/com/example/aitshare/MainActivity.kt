@@ -13,8 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var database: DatabaseReference
     val countingIdlingResource = CountingIdlingResource("data_loaded")
-    //CountingIdlingResource idlingResource = new CountingIdlingResource()
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
-
     }
 
     private fun validate(id: String, password: String) {

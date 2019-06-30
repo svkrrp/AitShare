@@ -17,7 +17,8 @@ class HomeActivity : AppCompatActivity() {
         }
 
         sell.setOnClickListener {
-
+            val intent = Intent(this, SellActivity::class.java)
+            startActivity(intent)
         }
     }
 }
